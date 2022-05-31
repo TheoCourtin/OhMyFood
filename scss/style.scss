@@ -1,0 +1,40 @@
+$font-family: Roboto, sans-serif;
+$primary-color: black;
+$font-weight: bold;
+$footer-background: rgb(36, 35, 35);
+
+
+
+body 
+{
+    font-family: $font-family;        
+}
+
+.nav
+{
+    display: flex;
+    justify-content: center;     
+}
+
+.nav__logo
+{
+    width: 250px;
+}
+
+h1, h2, h3
+{
+    font-family: $font-family;
+    font-weight: $font-weight;    
+}
+
+footer
+{
+    background-color: $footer-background;
+    display: flex;    
+    justify-content: space-around;
+    position: absolute; 
+    right: 0;
+    left: 0;
+    width: 100%;
+    flex-shrink: 0;    
+}

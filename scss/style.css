@@ -1,0 +1,30 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav__logo {
+  width: 250px;
+}
+
+h1, h2, h3 {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+}
+
+footer {
+  background-color: rgb(36, 35, 35);
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
