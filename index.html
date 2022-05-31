@@ -4,71 +4,96 @@
     <meta charset="UTF-8">
     <title>ohmyfood</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  type="text/css" href="css/style.css">
+    <link rel="stylesheet"  type="text/css" href="scss/style.css">
   </head>
 <body>
-    <header>        
-            <a href="#"><img src="images\logo\ohmyfood.png" alt="logo"></a>
+    <header>
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="#"><img class="nav__logo" src="images\logo\ohmyfood.png" alt="logo"></a>
+            </div>
+        </nav>        
+            
     </header>
+
 <main>
     <section>
         <article>
-            <header>Paris Belleville</header>
+            <p>Paris Belleville</p>
             <h2>Réserver le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <footer><button>Explorer nos restaurants</button></footer>
+            <button>Explorer nos restaurants</button>
         </article>
     </section>
 
     <section>
         <article>
-            <p>1 Choissisiez un restaurant</p>            
+            <div class="card">
+                <p>1 Choissisiez un restaurant</p>
+            </div>            
         </article>
+
         <article>
-            <p>2 Fonctionnement</p>
+            <div class="card">
+                <p>2 Fonctionnement</p>
+            </div>
         </article>
+
         <article>
-            <p>3 Degustez un restaurant</p>
+            <div class="card">
+                <p>3 Degustez un restaurant</p>
+            </div>
         </article>
     </section>
 
     <section>
-        <header>Restaurants</header>
+        <h2>Restaurants</h2>
             <article>
-                <h2>Le palet du goût</h2>
-                    <p>Ménilmontant</p>
+                <div class="card">
+                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant">
+                    <h3>Le palet du goût</h3>
+                        <p>Ménilmontant</p>
+                        <i class="">♥</i>
+                </div>
+            </article>
+
+            <article>
+                <div class="card">
+                    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restaurant">
+                    <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                        <i class="">♥</i>
+                </div>    
+            </article>
+
+            <article>
+                <div class="card">
+                    <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="restaurant">
+                    <h3>A la française</h3>
+                    <p>Cité Rouge</p>
                     <i class="">♥</i>
+                </div>
             </article>
 
             <article>
-                <h2>La note enchantée</h2>
-                    <p>Charonne</p>
+                <div class="card">
+                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant">
+                    <h3>Le délice des sens</h3>
+                    <p>Folie-Méricourt</p>
                     <i class="">♥</i>
-            </article>
-
-            <article>
-                <h2>A la française</h2>
-                <p>Cité Rouge</p>
-                <i class="">♥</i>
-            </article>
-
-            <article>
-                <h2>Le délice des sens</h2>
-                <p>Folie-Méricourt</p>
-                <i class="">♥</i>
+                </div>
             </article>
     </section>
 </main>
 
 <footer>
-   <header>       
-    <a href="#"><img src="images\logo\ohmyfood.png" alt="logo"></a>
-  </header>   
+          
+        <a href="#"><img src="images\logo\ohmyfood.png" alt="logo"></a>
         <ul>
-          <li><a href="#"><i class=""></i>Proposer un restaurant</a></li>
-          <li><a href="#"><i class=""></i>Devenir partenaire</a></li>
-          <li><a href="#">Mentions légales</a></li>
-          <li><a href="#">Contact</a></li>
+          <li class="footer__link"><a href="#"><i class=""></i>Proposer un restaurant</a></li>
+          <li class="footer__link"><a href="#"><i class=""></i>Devenir partenaire</a></li>
+          <li class="footer__link"><a href="#">Mentions légales</a></li>
+          <li class="footer__link"><a href="#">Contact</a></li>
         </ul>
 
 </footer>
