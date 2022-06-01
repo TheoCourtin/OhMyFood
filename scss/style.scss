@@ -1,7 +1,10 @@
 $font-family: Roboto, sans-serif;
 $primary-color: black;
 $font-weight: bold;
-$footer-background: rgb(36, 35, 35);
+$footer-background: rgb(221, 220, 220);
+$footer-list-color: black;
+$main-background: rgb(179, 177, 177);
+
 
 
 
@@ -27,14 +30,80 @@ h1, h2, h3
     font-weight: $font-weight;    
 }
 
+.proj-explore--grey
+{
+    background-color: $main-background;
+}
+
+.proj-explore__heading
+{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.proj-explore__text
+{
+
+}
+
+.proj-order--howworkss
+{
+    background-color: $main-background;
+}
+
+.proj-order_card
+{
+
+}
+
+.proj-restaurants--list
+{
+
+}
+
+.proj-restaurants__card
+{
+
+}
+
+.proj-menu--menu
+{
+
+}
+
+.proj-menu__card
+{
+
+}
+
+.proj-menu__send
+{
+
+}
+
 footer
 {
     background-color: $footer-background;
     display: flex;    
-    justify-content: space-around;
-    position: absolute; 
-    right: 0;
-    left: 0;
+    flex-direction: column;
+    width: 100%;    
+}
+
+.footer-img
+{
     width: 100%;
-    flex-shrink: 0;    
+}
+
+ul.list
+{
+    list-style: none;
+}
+
+ul.list > li + a
+{
+    list-style-type: none;
+    text-decoration: none;   
+    color: $footer-list-color;
 }
