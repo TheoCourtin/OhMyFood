@@ -3,9 +3,7 @@ $primary-color: black;
 $font-weight: bold;
 $footer-background: rgb(221, 220, 220);
 $footer-list-color: black;
-$main-background: rgb(179, 177, 177);
-
-
+$main-background: rgb(244, 245, 245);
 
 
 body 
@@ -33,54 +31,61 @@ h1, h2, h3
 .proj-explore--grey
 {
     background-color: $main-background;
-}
 
-.proj-explore__heading
-{
-    background-color: aqua;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .proj-explore__heading
+    {
+        background-color: rgb(221, 220, 220);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid gray;
+        
+    }   
 }
 
 .proj-explore__text
 {
-
+    text-align: center;  
 }
+
+.proj-explore__button
+{
+    background-color: #8E44AD;
+    border-radius: 10px;    
+}
+
 
 .proj-order--howworkss
 {
     background-color: $main-background;
+
+    .proj-order_card
+    {
+
+    }
 }
 
-.proj-order_card
-{
 
-}
 
 .proj-restaurants--list
 {
+    .proj-restaurants__card
+    {
+
+    }
 
 }
 
-.proj-restaurants__card
-{
-
-}
 
 .proj-menu--menu
 {
+    .proj-menu__card
+    {
+        .proj-menu__send
+        {
 
-}
-
-.proj-menu__card
-{
-
-}
-
-.proj-menu__send
-{
-
+        }
+    }
 }
 
 footer
@@ -103,7 +108,8 @@ ul.list
 
 ul.list > li + a
 {
-    list-style-type: none;
+    // list-style-type: none;
     text-decoration: none;   
     color: $footer-list-color;
+    text-decoration: none;
 }
