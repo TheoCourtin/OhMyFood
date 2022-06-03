@@ -42,41 +42,31 @@ h1, h2, h3
         align-items: center;
         justify-content: center;
         border-top: 1px solid gray;        
-    }   
-}
-
-.proj-explore__text
-{
-    text-align: center;  
-}
-
-.proj-explore__button
-{
-    background-color: #d1b1df;
-    border-radius: 10px;
-    border: 0px solid white;
-    color: white;
-        
-}
-
-
-.proj-order--howworkss
-{
-    background-color: $main-background;
+    }
     
+    &__text{ text-align: center; }
+    &__button{ background-color: #d1b1df; border-radius: 10px; border: 0px solid white; color: white;}
+
 }
 
-.proj-order__button
+
+.proj-order--howworks
 {
-    display: flex;
-    width: 100%;
-    height: 80px;
-    border: 3px solid white;
-    justify-content: center;
-    align-items: center;
-    background-color: aliceblue;
-    border-radius: 20px;    
+    &--howworks{background-color: $main-background;}
+    &__button
+    {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        border: 3px solid white;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+        border-radius: 20px;
+    }
 }
+
+
 
 .fa-1
 {
@@ -128,36 +118,10 @@ i.fa-3
 
 .proj-restaurants--list
 {
-    background-color: rgb(206, 206, 206);
-    
-}
-
-.proj-restaurants__card
-{
-    
-}
-
-.proj-restaurants__card a
-{
-    
-}
-
-.proj-restaurants__card img
-{
-    width: 100%;    
-}  
-
-
-
-.proj-menu--menu
-{
-    .proj-menu__card
-    {
-        .proj-menu__send
-        {
-
-        }
-    }
+    &--list{ background-color: rgb(206, 206, 206);}
+    &__card {}
+    &__card a{}
+    &__card img {width: 100%;}    
 }
 
 footer
