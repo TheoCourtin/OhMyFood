@@ -1,14 +1,16 @@
 $font-family: Roboto, sans-serif;
 $primary-color: black;
 $font-weight: bold;
-$footer-background: rgb(221, 220, 220);
+$footer-background: rgb(21, 21, 21);
 $footer-list-color: black;
 $main-background: rgb(244, 245, 245);
 
 
 body 
 {
-    font-family: $font-family;        
+    font-family: $font-family;
+    // padding: 0 40px;
+    margin: 0;        
 }
 
 .nav
@@ -50,20 +52,24 @@ h1, h2, h3
 }
 
 
-.proj-order--howworks
-{
-    &--howworks{background-color: $main-background;}
+.proj-order
+{    
+    
+    &--howworks
+    {
+        background-color: #ffffff; 
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin: 20px;    
+    }
+    
+    
     &__button
     {
-        display: flex;
-        width: 100%;
-        height: 80px;
-        border: 3px solid white;
-        justify-content: center;
-        align-items: center;
-        background-color: aliceblue;
-        border-radius: 20px;
-    }
+        background-color: #ffffff;
+    }   
 }
 
 
@@ -116,12 +122,40 @@ i.fa-3
     background-color: #a95aca;
 }
 
-.proj-restaurants--list
+.proj-restaurants
 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // align-items: center;
+    gap: 25px;
+    color: #ffffff;
+
     &--list{ background-color: rgb(206, 206, 206);}
-    &__card {}
-    &__card a{}
-    &__card img {width: 100%;}    
+    &__card {width: 75%;display: flex; flex-direction: column; background-color: #ffffff; text-align: center; padding: 2px; border-radius: 10px;}
+    &__card a{width: 100%; text-decoration: none; color: black;}
+    &__card img {width: 100%; border-top-left-radius: 10px; object-fit: cover; border-top-right-radius: 10px;}
+    
+        
+}
+
+.proj-menu 
+{
+    &--menu{}
+    &__img{}
+    &__card{}
+}
+
+.fa-heart
+{
+       
+    
+}
+
+i.fa-heart
+{
+    color:#a95aca;
 }
 
 footer
@@ -132,20 +166,48 @@ footer
     width: 100%;    
 }
 
-.footer-img
+footer img
 {
-    width: 100%;
+    width: 120px;
+    filter: brightness(0) invert(1); 
+    padding-left: 40px;
+    padding-top: 20px;
+
 }
 
-ul.list
+.list ul
 {
-    list-style: none;
+    list-style-type: none;
+    // text-decoration: none;
+    // color: #ffffff;      
 }
 
-ul.list > li + a
+.list a 
 {
-    // list-style-type: none;
-    text-decoration: none;   
-    color: $footer-list-color;
     text-decoration: none;
+    color: rgb(255, 255, 255);
 }
+
+.fa-utensils
+{
+    
+    
+}
+
+i.fa-utensils
+{
+ 
+}
+
+.fa-hanshake-angle
+{
+    
+    
+}
+
+i.fa-hanshake-angle
+{
+    
+}
+
+
