@@ -3,7 +3,7 @@ $primary-color: black;
 $font-weight: bold;
 $footer-background: rgb(21, 21, 21);
 $footer-list-color: black;
-$main-background: rgb(244, 245, 245);
+$main-background: rgb(245 247 247);
 
 
 body 
@@ -16,7 +16,9 @@ body
 .nav
 {
     display: flex;
-    justify-content: center;     
+    justify-content: center;
+    padding-top: 20px;
+    margin: 10px;     
 }
 
 .nav__logo
@@ -30,6 +32,11 @@ h1, h2, h3
     font-weight: $font-weight;    
 }
 
+#main
+{
+    display: flex;
+    flex-direction: column;
+}
 .proj-explore
 {
     &--grey
@@ -39,15 +46,27 @@ h1, h2, h3
 
     &__heading
     {
-        background-color: rgb(221, 220, 220);
+        background-color: rgb(239 237 237);
         display: flex;
         align-items: center;
         justify-content: center;
-        border-top: 1px solid gray;        
+        border-top: 1px solid rgb(187, 187, 187);
+        font-weight: bold;        
     }
+
+    .fa-location-dot
+    {
+        padding: 20px;    
+    }
+    i.fa-location-dot
+    {
+        font-size: 20px;
+    }
+
     
-    &__text{ text-align: center; }
-    &__button{ background-color: #d1b1df; border-radius: 10px; border: 0px solid white; color: white;}
+    
+    &__text{ text-align: center; padding: 50px}
+    &__button{ background-image: linear-gradient(to bottom right, #dfa9f7,#9913d3); border-radius: 30px; border: 0px solid white; color: white; padding: 15px; }
 
 }
 
@@ -58,9 +77,9 @@ h1, h2, h3
     &--howworks
     {
         background-color: #ffffff; 
-         display: flex;
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        // align-items: center;
         gap: 10px;
         margin: 20px;    
     }
@@ -68,72 +87,92 @@ h1, h2, h3
     
     &__button
     {
-        background-color: #ffffff;
-    }   
-}
-
-
-
-.fa-1
-{
-    color: #ffffff;
-    font-size: 15px;
-    text-align: center;
+        background-color: #fafafa;
+        // padding: 10px;
+        width: 100%;
+        height: 70px;
+        border-radius: 20px;
+        border: 1px solid white;
+        box-shadow: 0 3px 1px #c9c9c9;
+        
+    }
     
-}
-
-i.fa-1
-{
-    display: inline-block;
-    border-radius: 90px;        
-    padding: 7.4px 10.2px;
-    background-color: #a95aca;
-}
-
-.fa-2
-{
-    color: #ffffff;
-    font-size: 15px;
-    text-align: center;
+    &__button:hover
+    {
+        background-color: #dfa9f7;
+    }
     
+    &__span1
+    {
+
+    }
+
+    button i 
+    {
+        margin: -12px;
+    }
+
+    .fa-1
+    {
+        color: #ffffff;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    i.fa-1
+    {
+        display: inline-block;
+        border-radius: 90px;        
+        padding: 7.0px 10.2px;
+        background-color: #a95aca;
+    }
+
+    .fa-2
+    {
+        color: #ffffff;
+        font-size: 15px;
+        text-align: center;    
+    }
+
+    i.fa-2
+    {
+        display: inline-block;
+        border-radius: 90px;        
+        padding: 7.4px 10.2px;
+        background-color: #a95aca;
+    }
+
+    .fa-3
+    {
+        color: #ffffff;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    i.fa-3
+    {
+        display: inline-block;
+        border-radius: 90px;        
+        padding: 7.4px 10.2px;
+        background-color: #a95aca;
+    }
 }
 
-i.fa-2
-{
-    display: inline-block;
-    border-radius: 90px;        
-    padding: 7.4px 10.2px;
-    background-color: #a95aca;
-}
 
-.fa-3
-{
-    color: #ffffff;
-    font-size: 15px;
-    text-align: center;
-    
-}
 
-i.fa-3
-{
-    display: inline-block;
-    border-radius: 90px;        
-    padding: 7.4px 10.2px;
-    background-color: #a95aca;
-}
+
 
 .proj-restaurants
 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    // align-items: center;
     gap: 25px;
-    color: #ffffff;
+    padding-bottom: 90px;
+    // color: #ffffff;
 
-    &--list{ background-color: rgb(206, 206, 206);}
-    &__card {width: 75%;display: flex; flex-direction: column; background-color: #ffffff; text-align: center; padding: 2px; border-radius: 10px; margin: auto;}
+    &--list{ background-color: rgb(249, 249, 249);}
+    &__card {width: 90%;display: flex; flex-direction: column; background-color: #ffffff; text-align: center; padding: 2px; border-radius: 10px; margin: auto;}
     &__card a{width: 100%; text-decoration: none; color: black;}
     &__card img {width: 100%; border-top-left-radius: 10px; object-fit: cover; border-top-right-radius: 10px; height:150px}
     article{width: 100%;}
