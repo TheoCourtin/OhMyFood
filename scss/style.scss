@@ -1,7 +1,7 @@
 $font-family: Roboto, sans-serif;
 $primary-color: black;
 $font-weight: bold;
-$footer-background: rgb(21, 21, 21);
+$footer-background: rgb(43, 43, 43);
 $footer-list-color: black;
 $main-background: rgb(245 247 247);
 
@@ -94,22 +94,51 @@ h1, h2, h3
         border-radius: 20px;
         border: 1px solid white;
         box-shadow: 0 3px 1px #c9c9c9;
+               
+    }
+    
+    &__button:hover 
+    {
+        background-color: #eac8f8;
+    }
+
+    &__button:hover i
+    {
+        color: #7a05a8;
+    }
+       
+    .fa-mobile-screen-button
+    {
+        font-size: 25px;
+
+    }
+
+    i.fa-mobile-screen-button
+    {
+
+    }
+
+    .fa-list-ul
+    {
+        font-size: 25px;
+
+    }
+
+    i.fa-list-ul
+    {
+
+    }
+
+    .fa-store
+    {
+        font-size: 25px;
         
-    }
-    
-    &__button:hover
-    {
-        background-color: #dfa9f7;
-    }
-    
-    &__span1
-    {
 
     }
 
-    button i 
+    i.fa-store
     {
-        margin: -12px;
+
     }
 
     .fa-1
@@ -174,8 +203,10 @@ h1, h2, h3
     &--list{ background-color: rgb(249, 249, 249);}
     &__card {width: 90%;display: flex; flex-direction: column; background-color: #ffffff; text-align: center; padding: 2px; border-radius: 10px; margin: auto;}
     &__card a{width: 100%; text-decoration: none; color: black;}
-    &__card img {width: 100%; border-top-left-radius: 10px; object-fit: cover; border-top-right-radius: 10px; height:150px}
+    &__card img {width: 100%; border-top-left-radius: 10px; object-fit: cover; border-top-right-radius: 10px; height:200px}
     article{width: 100%;}
+    .test{position: absolute; top: 121%; right: 62px; color: rgb(156, 253, 11); background-color: #ffffff;}
+    
     
         
 }
@@ -189,13 +220,19 @@ h1, h2, h3
 
 .fa-heart
 {
-       
-    
+    color: black;
+    font-size: 20px;     
 }
 
 i.fa-heart
 {
+      
+}
+
+i.fa-heart:hover
+{
     color:#a95aca;
+    stroke:#a95aca;
 }
 
 footer
@@ -211,7 +248,7 @@ footer img
     width: 120px;
     filter: brightness(0) invert(1); 
     padding-left: 40px;
-    padding-top: 20px;
+    padding-top: 30px;
 
 }
 
@@ -226,6 +263,7 @@ footer img
 {
     text-decoration: none;
     color: rgb(255, 255, 255);
+    line-height: 30px;
 }
 
 .fa-utensils
@@ -236,7 +274,7 @@ footer img
 
 i.fa-utensils
 {
- 
+    padding-right: 10px;
 }
 
 .fa-hanshake-angle
@@ -245,9 +283,9 @@ i.fa-utensils
     
 }
 
-i.fa-hanshake-angle
+i.fa-handshake-angle
 {
-    
+    padding-right: 3px;    
 }
 
 
