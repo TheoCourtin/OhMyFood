@@ -63,11 +63,12 @@ h1, h2, h3
         font-size: 20px;
     }
 
+   
     
     
     &__text{ text-align: center; padding: 50px}
-    &__button{ background-image: linear-gradient(to bottom right, #dfa9f7,#9913d3); border-radius: 30px; border: 0px solid white; color: white; padding: 15px; }
-
+    &__button{ background-image: linear-gradient(to bottom right, #f2d4ff,#ac36df); border-radius: 30px; border: 0px solid white; color: white; padding: 15px; box-shadow: 1px 1px 1px 1px #eee;}
+    &__button:hover{background-image: linear-gradient(to bottom right, #e4bcf5,#d675ff); box-shadow: 1px 1px 1px 1px rgb(207, 207, 207);}
 }
 
 
@@ -94,22 +95,23 @@ h1, h2, h3
         border-radius: 20px;
         border: 1px solid white;
         box-shadow: 0 3px 1px #c9c9c9;
+        margin-left: -20px;
                
     }
     
     &__button:hover 
     {
-        background-color: #eac8f8;
+        background-color: #efd3fa;
     }
 
     &__button:hover i
     {
-        color: #7a05a8;
+        color: #9506ce;
     }
        
     .fa-mobile-screen-button
     {
-        font-size: 25px;
+        font-size: 20px;
 
     }
 
@@ -120,7 +122,7 @@ h1, h2, h3
 
     .fa-list-ul
     {
-        font-size: 25px;
+        font-size: 20px;
 
     }
 
@@ -131,8 +133,7 @@ h1, h2, h3
 
     .fa-store
     {
-        font-size: 25px;
-        
+        font-size: 20px;        
 
     }
 
@@ -144,47 +145,54 @@ h1, h2, h3
     .fa-1
     {
         color: #ffffff;
-        font-size: 15px;
+        font-size: 12px;
         text-align: center;
+        position: relative;
     }
 
     i.fa-1
     {
         display: inline-block;
         border-radius: 90px;        
-        padding: 7.0px 10.2px;
+        padding: 7px 9.5px;
         background-color: #a95aca;
+        margin-right: 10px;
     }
 
     .fa-2
     {
         color: #ffffff;
-        font-size: 15px;
-        text-align: center;    
+        font-size: 12px;
+        text-align: center;
+        position: relative;    
     }
 
     i.fa-2
     {
         display: inline-block;
         border-radius: 90px;        
-        padding: 7.4px 10.2px;
+        padding: 7px 9px;
         background-color: #a95aca;
+        margin-right: 10px;
     }
 
     .fa-3
     {
         color: #ffffff;
-        font-size: 15px;
+        font-size: 12px;
         text-align: center;
+        position: relative;
     }
 
     i.fa-3
     {
         display: inline-block;
         border-radius: 90px;        
-        padding: 7.4px 10.2px;
+        padding: 7px 9px;
         background-color: #a95aca;
+        margin-right: 10px;
     }
+    article{display: flex; align-items: center;}
 }
 
 
@@ -205,7 +213,7 @@ h1, h2, h3
     &__card a{width: 100%; text-decoration: none; color: black;}
     &__card img {width: 100%; border-top-left-radius: 10px; object-fit: cover; border-top-right-radius: 10px; height:200px}
     article{width: 100%;}
-    .test{position: absolute; top: 121%; right: 62px; color: rgb(156, 253, 11); background-color: #ffffff;}
+    .test{z-index:2; position: absolute; top: 109%; right: 31px; color: #488f40; height: 28px; width: 23%; background-color: #99E2D0; padding-top: 10px; margin: auto;}
     
     
         
@@ -221,12 +229,13 @@ h1, h2, h3
 .fa-heart
 {
     color: black;
-    font-size: 20px;     
-}
+    font-size: 20px;       
+}     
+
 
 i.fa-heart
 {
-      
+          
 }
 
 i.fa-heart:hover
