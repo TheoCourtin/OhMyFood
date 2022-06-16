@@ -5,6 +5,23 @@ $footer-background: rgb(43, 43, 43);
 $footer-list-color: black;
 $main-background: rgb(245 247 247);
 
+// #loading {
+//     display: inline-block;
+//     width: 50px;
+//     height: 50px;
+//     border: 3px solid rgba(255,255,255,.3);
+//     border-radius: 50%;
+//     border-top-color: #fff;
+//     animation: spin 1s ease-in-out infinite;
+//     -webkit-animation: spin 1s ease-in-out infinite;
+//   }
+  
+//   @keyframes spin {
+//     to { -webkit-transform: rotate(360deg); }
+//   }
+//   @-webkit-keyframes spin {
+//     to { -webkit-transform: rotate(360deg); }
+//   }
 
 body 
 {
@@ -56,7 +73,7 @@ h1, h2, h3
 
     .fa-location-dot
     {
-        padding: 20px;    
+        padding: 15px;    
     }
     i.fa-location-dot
     {
@@ -66,7 +83,7 @@ h1, h2, h3
    
     
     
-    &__text{ text-align: center; padding: 50px}
+    &__text{ text-align: center; padding-bottom: 40px; padding-top: 20px; font-size: 18px;}
     &__button{ background-image: linear-gradient(to bottom right, #f2d4ff,#ac36df); border-radius: 30px; border: 0px solid white; color: white; padding: 15px; box-shadow: 1px 1px 1px 1px #eee;}
     &__button:hover{background-image: linear-gradient(to bottom right, #e4bcf5,#d675ff); box-shadow: 1px 1px 1px 1px rgb(207, 207, 207);}
 }
@@ -85,6 +102,7 @@ h1, h2, h3
         margin: 20px;    
     }
     
+    span{}
     
     &__button
     {
@@ -209,11 +227,16 @@ h1, h2, h3
     // color: #ffffff;
 
     &--list{ background-color: rgb(249, 249, 249);}
+    .container{position:relative;}
+    .text_float{display: flex; position: absolute; background-color: #99E2D0; color: #488f40; top: 17px; right: 20px; padding-left: 10px; padding-right: 10px; height: 35px; width: 77px;
+    justify-content: center; align-items: center; border-radius: 3px;}    
     &__card {width: 90%;display: flex; flex-direction: column; background-color: #ffffff; text-align: center; padding: 2px; border-radius: 10px; margin: auto;}
     &__card a{width: 100%; text-decoration: none; color: black;}
     &__card img {width: 100%; border-top-left-radius: 10px; object-fit: cover; border-top-right-radius: 10px; height:200px}
     article{width: 100%;}
-    .test{z-index:2; position: absolute; top: 109%; right: 31px; color: #488f40; height: 28px; width: 23%; background-color: #99E2D0; padding-top: 10px; margin: auto;}
+    .title{display: flex; align-items: center; justify-content: space-between;}
+    h2{padding-left: 15px;}
+   
     
     
         
@@ -229,7 +252,8 @@ h1, h2, h3
 .fa-heart
 {
     color: black;
-    font-size: 20px;       
+    font-size: 20px;
+    
 }     
 
 
@@ -242,6 +266,7 @@ i.fa-heart:hover
 {
     color:#a95aca;
     stroke:#a95aca;
+   
 }
 
 footer
