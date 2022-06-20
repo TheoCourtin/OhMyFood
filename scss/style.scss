@@ -5,57 +5,56 @@ $footer-background: rgb(43, 43, 43);
 $footer-list-color: black;
 $main-background: rgb(245 247 247);
 
+
+
 // Spinner
-.space_spinner{
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255,0.9);
-  position: absolute;
-  display: grid;
-  place-items: center center;
-      &{
-          animation: space_spin 3000ms ease-in-out;
-              > .spinner{
-                  animation: spin infinite 3000ms ease-in-out;
-                  // opacity: 0;
-                  
-              }
+.loading
+    {
+      display: block;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      /*ici tout ce qui concerne votre background linear gradient*/
+      background-color: whitesmoke;
+      animation: hideLoader 3000ms 1 forwards;
+      animation-delay: 1500ms;
+    }
+ 
+    .loading::after
+    {
+      content : "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      /*ici votre design de bordure */
+      width: 50px;
+      height: 50px;
+      border: #9356DC solid 5px;
+      border-top-color: #efd3fa;
+      border-bottom-color: #efd3fa;      
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+ 
+    @keyframes hideLoader
+    {
+      100%
+      {
+        opacity: 0;
+        display: none;
       }
-}
-
-.spinner{
-  width: 50px;
-  height: 50px;
-  border: 10px dashed yellowgreen;
-  border-left-color: aquamarine;
-  border-bottom-color: transparent;
-  border-right-color: tomato;
-  border-radius: 100%;   
-}
-
-@keyframes spin{
-  0%{
-      transform: rotate(0deg);
-  }
-  100% {
-      transform: rotate(360deg);
-      display: none;
-      // opacity: 0;
-  }
-}
-
-@keyframes space_spin{
-  0%{
-      scale: 1;
-      
-  }
-  100% {
-      scale: 0;
-      display: none;
-      // opacity: 0;
-      
-  }
-}
+    }
+ 
+    @keyframes spin
+    {
+      100%
+      {
+        transform: translate(-50%,-50%) rotate(360deg);
+      }
+    }
 
 body {
   font-family: $font-family;
@@ -246,10 +245,6 @@ h3 {
   }
 }
 
-
-
-
-
 .proj-restaurants 
 {
   width: 100%;
@@ -338,31 +333,52 @@ h3 {
     h2 {
       padding-left: 15px;
     }
+
+    
 }
 
 .proj-menu {
-    &--menu {}
+    &--menu {display: flex; flex-direction: column;
+    width: 100%; gap: 25px;}
 
-    &__img {}
+    &__cadre{background: #eeeeee;}
 
-    &__card {}
+    &__img img {width: 100%;}
+    
+
+    &__card {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      // text-align: center;
+      padding: 2px;
+      border-radius: 10px;
+      margin: auto;      
+    }
+
+    &__list{display: flex; flex-direction: column; gap: 20px;}
+    
+    &__send{display: flex; justify-content: center; margin: auto; padding: 50px;}
+
+    button {
+      background-image: linear-gradient(to bottom right, #f2d4ff, #ac36df);
+      border-radius: 30px;
+      border: 0px solid white;
+      color: white;
+      padding: 15px 45px;
+      box-shadow: 1px 1px 1px 1px #eee;
+    }
+  
+    button:hover {
+      background-image: linear-gradient(to bottom right, #e4bcf5, #d675ff);
+      box-shadow: 1px 1px 1px 1px rgb(207, 207, 207);
+    }
+
+    h2{border-bottom: 2px solid #44AD8B; display: flex; width: 40px; font-size: 18px;}
+
+    .fa-heart{color: #9506ce;}
 }
-
-  .fa-heart {
-    color: black;
-    font-size: 25px;
-
-  }
-
-
-  i.fa-heart {}
-
-  i.fa-heart:hover {
-    color: #a95aca;
-    fill: #a95aca;
-  }
-
-
 
   footer {
     background-color: $footer-background;
