@@ -5,13 +5,22 @@
     <title>ohmyfood</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  type="text/css" href="scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="ressources/fontawesome-free-6.1.1-web/css/all.css">
   </head>
 <body>
     <header>
         <nav class="nav">
-            <a href="index.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+            
             <div class="nav__heading">
-                <a href="#"><img class="nav__logo" src="images\logo\ohmyfood.png" alt="logo"></a>
+                <div class="icon">
+                        <a href="index.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+                </div>
+
+                <div class="text">
+                    <img class="nav__logo" src="images\logo\ohmyfood.png" alt="logo">
+                </div>
+                
             </div>
 
         </nav>    
@@ -23,8 +32,9 @@
             <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="menu"></a>
         </div>
         <div class="proj-menu__cadre">
-        <div class="">
-            <h1>A la francaise</h1><i class="fa-solid fa-heart"></i>
+        <div class="titre">
+            <h1>A la francaise</h1>
+            <i class="fa-regular fa-heart"></i>
         </div>        
 
         
@@ -32,23 +42,40 @@
         <h2>ENTREES</h2>
         
         <article>
-            <div class="proj-menu__card">        
-                <h3>Tartare de thon</h3>
-                <p>Assaisonné de yuzu 45 euros</p>
+            <div class="proj-menu__card">
+                <div class="plat"><h3>Tartare de thon</h3>
+                    <p>Assaisonné de yuzu</p>
+                </div>  
+                    
+                    <div class="prix">
+                        <p>45 €</p>
+                    </div>
+                
             </div>
         </article>
 
         <article>
-            <div class="proj-menu__card">           
-                <h3>Bouchées de homard croustillant</h3>
-                <p>Et sa farandole de petits légumés 35 euros</p>
+            <div class="proj-menu__card">
+                <div class="plat">
+                    <h3>Bouchées de homard croustillant</h3>
+                    <p>Et sa farandole de petits légumés </p>
+                </div>           
+                <div class="prix">
+                    <p>35 €</p>
+                </div>
+                
             </div> 
         </article>
 
         <article>
             <div class="proj-menu__card">
-                <h3>Velouté de cèpes</h3>
-                <p>Aux truffes 20 euros</p>
+                <div class="plat">
+                    <h3>Velouté de cèpes</h3>
+                    <p>Aux truffes</p>
+                </div>
+                <div class="prix">
+                    <p>20 €</p>
+                </div>
             </div>            
             
         </article>
@@ -58,23 +85,38 @@
         <h2>PLATS</h2>
         
         <article>
-            <div class="proj-menu__card">          
-                <h3>Poulet rôtie aux herbes de provence</h3>
-                <p>Et sa crème de truffes 40 euros</p>
+            <div class="proj-menu__card">
+                <div class="plat"> 
+                    <h3>Poulet rôtie aux herbes de provence</h3>
+                    <p>Et sa crème de truffes</p>
+                </div>
+                <div class="prix"><p>40 €</p></div>          
+               
             </div>  
         </article>
 
         <article>
-            <div class="proj-menu__card">            
-                <h3>Langouste rôtie</h3>
-                <p>Et ses légumes de saison 35 euros</p>
+            <div class="proj-menu__card">
+                <div class="plat"> 
+                    <h3>Langouste rôtie</h3>
+                    <p>Et ses légumes de saison</p>
+                </div>            
+                <div class="prix">
+                    <p>35 €</p>
+                </div>    
             </div>
         </article>
 
         <article>
-            <div class="proj-menu__card">            
-                <h3>Côte de boeuf angus</h3>
-                <p>Et sa purée de panais 44 euros</p>
+            <div class="proj-menu__card">
+                <div class="plat">
+                    <h3>Côte de boeuf angus</h3>
+                    <p>Et sa purée de panais </p>
+                </div>
+                <div class="prix">
+                    <p>44 €</p>
+                </div>             
+                
             </div>
         </article>
         </div>
@@ -83,23 +125,41 @@
         <h2>DESSERTS</h2>
 
         <article>
-            <div class="proj-menu__card">            
-                <h3>Farandole de desserts</h3>
-                <p>Du chef 18 euros</p>
+            <div class="proj-menu__card">
+                <div class="plat">
+                    <h3>Farandole de desserts</h3>
+                    <p>Du chef</p>
+                </div>
+                
+                <div class="prix">
+                    <p>18 €</p>
+                </div>  
+                
             </div>
         </article>
 
         <article>
-            <div class="proj-menu__card">             
-                <h3>Crème brulée</h3>
-                <p>Revisitée 22 euros</p>
+            <div class="proj-menu__card">
+                <div class="plat">
+                    <h3>Crème brulée</h3>
+                    <p>Revisitée</p>
+                </div>        
+                
+                <div class="prix">
+                    <p>22 €</p>
+                </div>  
             </div>    
         </article>
 
         <article>
-            <div class="proj-menu__card">            
-                <h3>Tiramisu</h3>
-                <p>A la noisette 23 euros</p>
+            <div class="proj-menu__card">
+                <div class="plat">
+                    <h3>Tiramisu</h3>
+                    <p>A la noisette</p>
+                </div>   
+                
+                <div class="prix">23 €</div>
+                
             </div>
         </article>
 
