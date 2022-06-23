@@ -20,7 +20,7 @@ $main-background: rgb(245 247 247);
 //       animation: hideLoader 3000ms 1 forwards;
 //       animation-delay: 1500ms;
 //     }
- 
+
 //     .loading::after
 //     {
 //       content : "";
@@ -38,7 +38,7 @@ $main-background: rgb(245 247 247);
 //       border-radius: 50%;
 //       animation: spin 1s linear infinite;
 //     }
- 
+
 //     @keyframes hideLoader
 //     {
 //       100%
@@ -47,7 +47,7 @@ $main-background: rgb(245 247 247);
 //         display: none;
 //       }
 //     }
- 
+
 //     @keyframes spin
 //     {
 //       100%
@@ -73,13 +73,29 @@ body {
   width: 250px;
 }
 
-.nav__heading{display: flex; align-items: center;}
+.text {
+  width: calc(100% - 20px);
+  font-size: 15px;
+}
 
-.icon{display: flex; justify-content: flex-start; width: 40px;}
+.nav__heading {
+  display: flex;
+  align-items: center;
+}
 
-.fa-arrow-left-long{font-size: 25px;color:black;} 
+.icon {
+  display: flex;
+  justify-content: flex-start;
+  width: 80px;
+  justify-content: center;
+}
 
-i.fa-arrow-left-long{}
+.fa-arrow-left-long {
+  font-size: 25px;
+  color: black;
+}
+
+i.fa-arrow-left-long {}
 
 
 h1,
@@ -254,14 +270,13 @@ h3 {
   }
 }
 
-.proj-restaurants 
-{
-    width: 100%;
-    display: flex;
-    gap: 25px;
-    padding-bottom: 90px;
-    flex-wrap: wrap;
-    justify-content: center;
+.proj-restaurants {
+  width: 100%;
+  display: flex;
+  gap: 25px;
+  padding-bottom: 90px;
+  flex-wrap: wrap;
+  justify-content: center;
 
   &--list {
     background-color: rgb(249, 249, 249);
@@ -318,153 +333,218 @@ h3 {
     align-items: center;
   }
 
-    .description .text {
-      width: calc(100% - 80px);
-      padding: 0 20px;
-      text-align: left;
-      line-height: 5px;
-    }
+  .description .text {
+    width: calc(100% - 80px);
+    padding: 0 20px;
+    text-align: left;
+    line-height: 5px;
+  }
 
-    .description .icon {
-      width: 10px;
-      padding: 0 20px;
-    }
+  .description .icon {
+    width: 10px;
+    padding: 0 20px;
+  }
 
-    article {
-      width: 40%;
-    }
+  article {
+    width: 40%;
+  }
 
-    .title {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    h2 {
-        padding-left: 15px;
-        display: flex;
-        flex-basis: 100%;
-    }
+  h2 {
+    padding-left: 15px;
+    display: flex;
+    flex-basis: 100%;
+  }
 
-    // .fa-heart{font-size: 23px;}
+  // .fa-heart{font-size: 23px;}
 
-    // .fa-heart:hover{color: #a95aca;}
+  // .fa-heart:hover{color: #a95aca;}
 
-    // i-fa-heart{}
+  // i-fa-heart{}
 
-    .fa-heart {
-        color: rgb(0, 0, 0);
-        background-color: rgb(255, 255, 255);
-        border-radius: 50%;
-        font-size: 23px;
-    }
-    .fa-heart::before {
-        content: "\f08a";
-        // font-weight: bold;
-        transform: color 1.25s ease-out;
-    }
-    .fa-heart:hover::before{
-        color: #d675ff;
-        cursor: pointer;
-    }
-    
-    i-fa-heart:hover{color: #9506ce;}   
-    
+  .fa-heart {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    font-size: 23px;
+  }
+
+  .fa-heart::before {
+    content: "\f08a";
+    // font-weight: bold;
+    transition: color 1.75s ease-out;
+  }
+
+  .fa-heart:hover::before {
+    color: #d675ff;
+    cursor: pointer;
+  }
+
+  i-fa-heart:hover {
+    color: #9506ce;
+  }
+
 }
 
 .proj-menu {
-    &--menu {display: flex; flex-direction: column;
-    width: 100%;}
 
-    &__cadre{background: #f5f7f7;}
+  background-image: url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
 
-    &__img img {width: 100%;}
-    
-
-    &__card {
-      width: 90%;
-      display: flex;
-      // flex-direction: column;
-      background-color: #ffffff;
-      padding: 2px;
-      border-radius: 10px;
-      margin: auto;      
-    }
-
-    &__list{display: flex; flex-direction: column; gap: 20px;}
-    
-    &__send{display: flex; justify-content: center; margin: auto; padding: 50px;}
-
-    button {
-      background-image: linear-gradient(to bottom right, #f2d4ff, #ac36df);
-      border-radius: 30px;
-      border: 0px solid white;
-      color: white;
-      padding: 15px 45px;
-      box-shadow: 1px 1px 1px 1px #eee;
-    }
-  
-    button:hover {
-      background-image: linear-gradient(to bottom right, #e4bcf5, #d675ff);
-      box-shadow: 1px 1px 1px 1px rgb(207, 207, 207);
-    }
-
-    h2{border-bottom: 2px solid #44AD8B; display: flex; width: 40px; font-size: 18px;}
-
-    .fa-heart{font-size: 23px;}
-
-    .titre{display: flex; justify-content: space-between; align-items: center;}
-
-    .plat{display: flex; flex-direction: column; width: calc(100% - 40px); line-height: 0px;}
-
-    .prix{display: flex; justify-content: flex-end; align-items: flex-end;}
-}
-
-  footer {
-    background-color: $footer-background;
+  &--menu {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  footer img {
-    width: 120px;
-    filter: brightness(0) invert(1);
-    padding-left: 40px;
-    padding-top: 30px;
-
+  &__cadre {
+    background: #f5f7f7;
   }
 
-  .list ul {
-    list-style-type: none;
-    // text-decoration: none;
-    // color: #ffffff;      
+  &__img img {
+    width: 100%;
   }
 
-  .list a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    line-height: 30px;
+  &__card {
+    width: 95%;
+    display: flex;
+    // flex-direction: column;
+    background-color: #ffffff;
+    padding: 2px;
+    border-radius: 10px;
+    margin: auto;
   }
 
-  .fa-utensils {}
-
-  i.fa-utensils {
-    padding-right: 10px;
+  &__card:hover .a {
+    display: flex;
+    width: 150px;
+    height: 68px;
+    justify-content: center;
+    align-items: center;
+    background-color: #488f40;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;    
+    transition: 3s;
+    overflow:hidden
   }
 
-  .fa-hanshake-angle {}
+  
+  // &__card:hover {
+  //   width: 95%;
+  // }
 
-  i.fa-handshake-angle {
-    padding-right: 3px;
+  .fa-circle-check {
+    color: white
   }
+
+  i-fa-circle-check {}
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__send {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 50px;
+  }
+
+  button {
+    background-image: linear-gradient(to bottom right, #f2d4ff, #ac36df);
+    border-radius: 30px;
+    border: 0px solid white;
+    color: white;
+    padding: 15px 45px;
+    box-shadow: 1px 1px 1px 1px #eee;
+  }
+
+  button:hover {
+    background-image: linear-gradient(to bottom right, #e4bcf5, #d675ff);
+    box-shadow: 1px 1px 1px 1px rgb(207, 207, 207);
+  }
+
+  h2 {
+    border-bottom: 2px solid #44AD8B;
+    display: flex;
+    width: 40px;
+    font-size: 18px;
+  }
+
+  .fa-heart {
+    font-size: 23px;
+  }
+
+  .titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .plat {
+    //display: flex; 
+    flex-direction: column;
+    width: calc(100% - 40px);
+    line-height: 0px;
+  }
+
+  .prix {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+
+}
+
+footer {
+  background-color: $footer-background;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+footer img {
+  width: 120px;
+  filter: brightness(0) invert(1);
+  padding-left: 40px;
+  padding-top: 30px;
+
+}
+
+.list ul {
+  list-style-type: none;
+  // text-decoration: none;
+  // color: #ffffff;      
+}
+
+.list a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  line-height: 30px;
+}
+
+.fa-utensils {}
+
+i.fa-utensils {
+  padding-right: 10px;
+}
+
+.fa-hanshake-angle {}
+
+i.fa-handshake-angle {
+  padding-right: 3px;
+}
 
 @media screen and (min-width: 768px) and (max-width:991px) {}
 
-@media screen and (max-width: 767px)
-{
-    
-}
+@media screen and (max-width: 767px) {}
 
 
 // a {
