@@ -7,54 +7,54 @@ $main-background: rgb(245 247 247);
 
 
 
-// Spinner
-.loading
-    {
-      display: block;
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      z-index: 10;
-      /*ici tout ce qui concerne votre background linear gradient*/
-      background-color: whitesmoke;
-      animation: hideLoader 3000ms 1 forwards;
-      animation-delay: 1500ms;
-    }
+// // Spinner
+// .loading
+//     {
+//       display: block;
+//       position: fixed;
+//       width: 100%;
+//       height: 100%;
+//       z-index: 10;
+//       /*ici tout ce qui concerne votre background linear gradient*/
+//       background-color: whitesmoke;
+//       animation: hideLoader 3000ms 1 forwards;
+//       animation-delay: 1500ms;
+//     }
  
-    .loading::after
-    {
-      content : "";
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      /*ici votre design de bordure */
-      width: 50px;
-      height: 50px;
-      border: #9356DC solid 5px;
-      border-top-color: #efd3fa;
-      border-bottom-color: #efd3fa;      
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
+//     .loading::after
+//     {
+//       content : "";
+//       display: block;
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%,-50%);
+//       /*ici votre design de bordure */
+//       width: 50px;
+//       height: 50px;
+//       border: #9356DC solid 5px;
+//       border-top-color: #efd3fa;
+//       border-bottom-color: #efd3fa;      
+//       border-radius: 50%;
+//       animation: spin 1s linear infinite;
+//     }
  
-    @keyframes hideLoader
-    {
-      100%
-      {
-        opacity: 0;
-        display: none;
-      }
-    }
+//     @keyframes hideLoader
+//     {
+//       100%
+//       {
+//         opacity: 0;
+//         display: none;
+//       }
+//     }
  
-    @keyframes spin
-    {
-      100%
-      {
-        transform: translate(-50%,-50%) rotate(360deg);
-      }
-    }
+//     @keyframes spin
+//     {
+//       100%
+//       {
+//         transform: translate(-50%,-50%) rotate(360deg);
+//       }
+//     }
 
 body {
   font-family: $font-family;
@@ -69,6 +69,7 @@ body {
   margin: 10px;
 }
 
+
 .nav__logo {
   width: 250px;
 }
@@ -76,6 +77,8 @@ body {
 .nav__heading{display: flex; align-items: center;}
 
 .icon{display: flex; justify-content: flex-start; width: 40px;}
+
+
 
 .fa-arrow-left-long{font-size: 25px;color:black;} 
 
@@ -437,6 +440,10 @@ h3 {
   i.fa-handshake-angle {
     padding-right: 3px;
   }
+
+// @media screen and (min-width: 768px) and (max-width:991px) {}
+
+// @media screen and (max-width: 767px){}
 
 
 // a {
