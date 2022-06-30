@@ -85,7 +85,7 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  // justify-content: center;
+  justify-content: center;
 }
 
 .icon {
@@ -172,7 +172,7 @@ h1
     display: flex;
     flex-direction: column;
     // align-items: center;
-    gap: 10px;
+    gap: 20px;
     margin: 20px;
   }
 
@@ -195,7 +195,7 @@ h1
     height: 70px;
     border-radius: 20px;
     border: 1px solid white;
-    box-shadow: 0 3px 1px #c9c9c9;
+    box-shadow: 0 3px 12px #c9c9c9;
     margin-left: -20px;
 
   }
@@ -356,6 +356,8 @@ h1
     padding: 0 20px;
   }
 
+  .fill{}
+
   article {
     width: 40%;
   }
@@ -373,32 +375,45 @@ h1
   }
 
   .fa-heart {
-    color: rgb(0, 0, 0);
+    // color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    font-size: 23px;
+    
+    // border-radius: 50%;
+    // font-size: 23px;
   }
 
-  .fa-heart::before {
-    content: "\f08a";
-    // font-weight: bold;
-    transition: color 1.75s ease-out;
-  }
+  // .fa-heart {
+  //   content: "\f08a";
+  //   // font-weight: bold;
+  //   transition: color 1.75s ease-out;
+  // }
 
-  .fa-heart:hover::before {
+  // @-webkit-keyframes animate-color {
+  //   0%    {color: black;}
+  //   33%   {fill: #d675ff; width: 33%}
+  //   66%   {fill: #d675ff; width: 66%}
+  //   100%  {fill: #d675ff;}
+  //   }
+
+  .fa-heart:hover {
     color: #d675ff;
     cursor: pointer;
+    transition: color 3s ease-out;
+    // background-color: #9506ce;
+    // -webkit-animation: animate-color 1.75s forwards;
   }
 
-  i-fa-heart:hover {
-    color: #9506ce;
-  }
+  // i-fa-heart:hover {
+  //   color: #9506ce;
+  // }
 
 }
 
 .proj-menu {
 
   background-image: url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+
+  h3, p {text-overflow: ellipsis;}
 
   &--menu {
     display: flex;
@@ -417,30 +432,43 @@ h1
   }
 
   &__card {
-    width: 95%;
-    display: flex;
+    // width: 95%;
+    // display: flex;
     // flex-direction: column;
     background-color: #ffffff;
-    padding: 2px;
+    // padding: 2px;
     border-radius: 10px;
+    // margin: auto;
+    // justify-content: space-between;
+    // align-items: flex-end;
+
+    display: flex;
+    width: 95%;
     margin: auto;
-    justify-content: space-between;
-    align-items: flex-end;
+    // border: 1px solid white;
+    overflow: hidden;
+    cursor: pointer;
     
   } 
 
   &__card:hover > .slide
   {
-    width: 80px;
+    // width: 80px;
     background-color: #44AD8B;
-    height: 97.44px;
+    // height: 97.44px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     // opacity: 1;
+
+    width: 80px;     
   }
 
   .slide
   {
+    // display: flex;
+    // width: 0;
+    // transition: all 1s;
+
     display: flex;
     width: 0;
     transition: all 1s;
@@ -448,17 +476,25 @@ h1
   
   .slideffect
   {
+    // margin: auto;
+    // border: 4px solid currentColor;
+    // border-radius: 50%;
+    // color: #690;
+    // background-color: #44AD8B;
+    // transition: transform 1s;
+    // opacity: 0;
+
     margin: auto;
     // border: 4px solid currentColor;
     border-radius: 50%;
-    // color: #690;
-    background-color: #44AD8B;
-    transition: transform 1s;
-    // opacity: 0;
+    // color: #44AD8B;
+    // background-color: #44AD8B;
+    // transition: transform 1s;
+    // transform: rotate(180deg);
     
   }
   
-  .h3, p {text-overflow: ellipsis;}
+  
   
 
   .fa-circle-check {
@@ -648,19 +684,36 @@ h1
     border: 0px solid white;
     color: white;
     padding: 15px 45px;
-    box-shadow: 1px 1px 1px 1px #eee;
+    box-shadow: 1px 6px 7px 7px rgb(239, 227, 237);
   }
 
   button:hover {
     background-image: linear-gradient(to bottom right, #e4bcf5, #d675ff);
-    box-shadow: 1px 1px 1px 1px rgb(207, 207, 207);
+    box-shadow: 1px 6px 7px 7px rgb(239, 227, 237);
   }
 
   h2 {
-    border-bottom: 2px solid #44AD8B;
-    display: flex;
-    width: 40px;
+    // 
+    // display: flex;
+    // width: 40px;
     font-size: 18px;
+    // font-size: 30px;
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;
+    padding-left: 10px;
+    font-weight: unset;
+  }
+
+  h2:before
+  {
+    content: "";
+    position: absolute;
+    width: 12%;
+    // height: 1px;
+    bottom: 3px;
+    left: 3%;
+    border-bottom: 2px solid #44AD8B;  
   }
 
   .fa-heart {
@@ -672,23 +725,29 @@ h1
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    
-
   }
 
   .plat {
-    //display: flex; 
+    display: flex; 
     flex-direction: column;
-    width: 100%;
+    // width: 100%;
     // width: 80%;
-    // line-height: 0px;
+    line-height: 0px;
+    padding-left: 12px;
+    padding-top: 10px;
+
+    flex-grow: 1;
+    width: 160px;
+    // background: #def;
   }
 
   .prix {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: flex-end;
-    width: 100%;
+    width: 12%;
+    padding-top: 30px;
+    
   }
 
 
@@ -751,6 +810,10 @@ i.fa-handshake-angle {
 @media screen and (min-width: 768px) and (max-width:991px) {}
 
 @media screen and (max-width: 767px) {
+
+  .nav__logo {
+    width: 200px;
+  }
 
   .proj-restaurants
   {
