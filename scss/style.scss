@@ -5,23 +5,34 @@ $footer-background: rgb(43, 43, 43);
 $footer-list-color: black;
 $main-background: rgb(245 247 247);
 
-
+body, html {
+  font-family: $font-family;
+  // padding: 0 40px;
+  margin:0;
+  // padding:0;
+  // width: 100%;
+}
 
 //Spinner
-.loading
+.spinner
     {
       display: block;
       position: fixed;
       width: 100%;
       height: 100%;
-      z-index: 10;
+      z-index: 999;
+      top:0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       /*ici tout ce qui concerne votre background linear gradient*/
-      background-color: whitesmoke;
+      background-color: white;
       animation: hideLoader 3000ms 1 forwards;
       animation-delay: 1500ms;
+      
     }
 
-    .loading::after
+    .spinner::after
     {
       content : "";
       display: block;
@@ -29,14 +40,14 @@ $main-background: rgb(245 247 247);
       top: 50%;
       left: 50%;
       transform: translate(-50%,-50%);
-      /*ici votre design de bordure */
       width: 50px;
       height: 50px;
       border: #9356DC solid 5px;
       border-top-color: #efd3fa;
       border-bottom-color: #efd3fa;      
       border-radius: 50%;
-      animation: spin 1s linear infinite;
+      animation: spin 1.25s linear infinite;
+      
     }
 
     @keyframes hideLoader
@@ -45,6 +56,7 @@ $main-background: rgb(245 247 247);
       {
         opacity: 0;
         display: none;
+        z-index: -1;
       }
     }
 
@@ -53,14 +65,12 @@ $main-background: rgb(245 247 247);
       100%
       {
         transform: translate(-50%,-50%) rotate(360deg);
+        // display: none;
+        // z-index: -1;             
       }
     }
 
-body {
-  font-family: $font-family;
-  // padding: 0 40px;
-  margin: 0;
-}
+
 
 .nav {
   display: flex;
@@ -132,6 +142,7 @@ h1
     justify-content: center;
     border-top: 1px solid rgb(187, 187, 187);
     font-weight: bold;
+    font-size: 20px;
   }
 
   .fa-location-dot {
@@ -176,6 +187,12 @@ h1
     margin: 20px;
   }
 
+  
+  h2
+  {
+    padding-left: 22px;
+  }
+
   .icon {
     display: flex;
     justify-content: flex-end;
@@ -191,7 +208,7 @@ h1
     background-color: #fafafa;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 94%;
     height: 70px;
     border-radius: 20px;
     border: 1px solid white;
@@ -277,6 +294,7 @@ h1
   article {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 }
 
@@ -286,7 +304,7 @@ h1
   gap: 25px;
   padding-bottom: 90px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 
   &--list {
     background-color: rgb(249, 249, 249);
@@ -369,51 +387,44 @@ h1
   }
 
   h2 {
-    padding-left: 15px;
+    padding-left: 44px;
     display: flex;
     flex-basis: 100%;
   }
 
   .fa-heart {
-    // color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
     
-    // border-radius: 50%;
-    // font-size: 23px;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
   }
-
-  // .fa-heart {
-  //   content: "\f08a";
-  //   // font-weight: bold;
-  //   transition: color 1.75s ease-out;
-  // }
-
-  // @-webkit-keyframes animate-color {
-  //   0%    {color: black;}
-  //   33%   {fill: #d675ff; width: 33%}
-  //   66%   {fill: #d675ff; width: 66%}
-  //   100%  {fill: #d675ff;}
-  //   }
 
   .fa-heart:hover {
     color: #d675ff;
     cursor: pointer;
-    transition: color 3s ease-out;
-    // background-color: #9506ce;
-    // -webkit-animation: animate-color 1.75s forwards;
+    transition: color 3s ease-out;   
   }
-
-  // i-fa-heart:hover {
-  //   color: #9506ce;
-  // }
 
 }
 
+.background
+{ 
+  width: 100%;    
+}
+
+.background img 
+{
+    display: block;
+    width: 100%;
+    height: 545px;
+    object-fit: cover;
+    margin-bottom: -14%;
+    box-sizing:border-box;         
+}
+
+
 .proj-menu {
 
-  background-image: url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-
-  h3, p {text-overflow: ellipsis;}
+  // background-image: url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg); 
 
   &--menu {
     display: flex;
@@ -431,23 +442,18 @@ h1
     width: 100%;
   }
 
-  &__card {
-    // width: 95%;
-    // display: flex;
-    // flex-direction: column;
-    background-color: #ffffff;
-    // padding: 2px;
-    border-radius: 10px;
-    // margin: auto;
-    // justify-content: space-between;
-    // align-items: flex-end;
+  article{width: 48%;}
 
+  &__card {
+
+    background-color: #ffffff;
+    border-radius: 10px;
     display: flex;
     width: 95%;
     margin: auto;
-    // border: 1px solid white;
     overflow: hidden;
     cursor: pointer;
+    flex-direction: row;
     
   } 
 
@@ -460,7 +466,38 @@ h1
     border-bottom-right-radius: 3px;
     // opacity: 1;
 
-    width: 80px;     
+    width: 80px;
+    
+    .slideffect {
+      transform: rotate(0deg);
+    }
+  }    
+
+  .plat {
+    display: flex; 
+    flex-direction: column;
+    flex-grow: 1;   
+    // line-height: 0px;
+    padding-left: 12px;
+    // padding-top: 10px;       
+    width: 160px;
+
+      h3,p {
+        // width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    
+  }
+
+  .prix {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 12%;
+    padding-top: 30px;
+    
   }
 
   .slide
@@ -475,25 +512,25 @@ h1
   }  
   
   .slideffect
-  {
-    // margin: auto;
-    // border: 4px solid currentColor;
-    // border-radius: 50%;
-    // color: #690;
-    // background-color: #44AD8B;
-    // transition: transform 1s;
-    // opacity: 0;
+  {   
 
     margin: auto;
-    // border: 4px solid currentColor;
-    border-radius: 50%;
-    // color: #44AD8B;
-    // background-color: #44AD8B;
-    // transition: transform 1s;
-    // transform: rotate(180deg);
+    border-radius: 50%;    
+    transition: transform 1s;
+    transform: rotate(180deg);
     
   }
   
+
+  .block
+  {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    padding-bottom: 90px;
+    flex-wrap: wrap;
+    /* justify-content: space-around;*/
+  }
   
   
 
@@ -505,8 +542,10 @@ h1
 
   &__list {
     display: flex;
-    flex-direction: column;
     gap: 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
   }
 
     .apparition {
@@ -693,28 +732,46 @@ h1
   }
 
   h2 {
-    // 
-    // display: flex;
-    // width: 40px;
-    font-size: 18px;
-    // font-size: 30px;
+    font-size: 18px;   
     display: inline-block;
     padding-bottom: 10px;
     position: relative;
     padding-left: 10px;
     font-weight: unset;
+    // flex-basis: 100%;
+    width: 13%;
+    
   }
 
-  h2:before
+  span
   {
-    content: "";
-    position: absolute;
-    width: 12%;
-    // height: 1px;
-    bottom: 3px;
-    left: 3%;
-    border-bottom: 2px solid #44AD8B;  
+    display: inline-block;
+    border-bottom: 1px solid #44AD8B;
+    font-size: 20px;
+    // padding: 0 1.5rem; 
   }
+
+  span::after
+  {
+    content: '';
+    position: absolute;
+    width: 35%;
+    height: 5px;
+    bottom: -3px;
+    left: 0;
+        
+  }
+
+  // h2:before
+  // {
+  //   content: "";
+  //   position: absolute;
+  //   width: 12%;
+  //   // height: 1px;
+  //   bottom: 3px;
+  //   left: 3%;
+  //   border-bottom: 2px solid #44AD8B;  
+  // }
 
   .fa-heart {
     font-size: 23px;
@@ -727,28 +784,7 @@ h1
     padding: 30px;
   }
 
-  .plat {
-    display: flex; 
-    flex-direction: column;
-    // width: 100%;
-    // width: 80%;
-    line-height: 0px;
-    padding-left: 12px;
-    padding-top: 10px;
-
-    flex-grow: 1;
-    width: 160px;
-    // background: #def;
-  }
-
-  .prix {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    width: 12%;
-    padding-top: 30px;
-    
-  }
+  
 
 
 }
@@ -793,23 +829,11 @@ i.fa-handshake-angle {
 }
 
 
-.background{
-
-    display: flex;
-    width: 100%;   
-}
 
 
-.background img
-{
-  display: flex;
-  width: 100%;
-  margin-bottom: -14%;
-}
 
-@media screen and (min-width: 768px) and (max-width:991px) {}
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width:991px) {
 
   .nav__logo {
     width: 200px;
@@ -817,11 +841,18 @@ i.fa-handshake-angle {
 
   .proj-restaurants
   {
+      
       width: 100%;
       display: flex;
       flex-direction: column;
       gap: 25px;
       padding-bottom: 90px;
+      
+      &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
 
     &__card {
       width: 90%;
@@ -849,6 +880,94 @@ i.fa-handshake-angle {
     }
   }
   
+  .proj-menu
+  {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    article{width: 100%;}
+
+    h2{}
+
+  }
 }
+
+@media screen and (max-width: 767px) {
+
+  .nav__logo {
+    width: 200px;
+  }
+
+  .proj-restaurants
+  {
+      
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      padding-bottom: 90px;
+      
+      &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+    &__card {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      text-align: center;
+      padding: 2px;
+      border-radius: 10px;
+      margin: auto;
+    }
+
+    article {
+      width: 100%;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    h2 {
+      padding-left: 15px;
+    }
+  }
+  
+  .proj-menu
+  {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__card
+    {
+      background-color: #ffffff;    
+      border-radius: 10px;
+      display: flex;
+      width: 95%;
+      margin: auto;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    article{width: 100%;}
+
+    h2{}
+
+  }
+}
+  
+
 
 
