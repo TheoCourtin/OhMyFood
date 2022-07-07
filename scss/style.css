@@ -17,7 +17,6 @@ body, html {
   left: 0;
   right: 0;
   bottom: 0;
-  /*ici tout ce qui concerne votre background linear gradient*/
   background-color: white;
   animation: hideLoader 3000ms 1 forwards;
   animation-delay: 1500ms;
@@ -318,6 +317,7 @@ h1 {
 .background img {
   display: block;
   width: 100%;
+  height: 610px;
   object-fit: cover;
   margin-bottom: -14%;
   box-sizing: border-box;
@@ -619,7 +619,6 @@ i.fa-handshake-angle {
   .nav__logo {
     width: 200px;
   }
-
   .proj-restaurants {
     width: 100%;
     display: flex;
@@ -653,7 +652,6 @@ i.fa-handshake-angle {
   .proj-restaurants h2 {
     padding-left: 15px;
   }
-
   .proj-menu__list {
     display: flex;
     flex-direction: column;
@@ -671,7 +669,6 @@ i.fa-handshake-angle {
   .proj-menu .fa-circle-check {
     font-size: 24px;
   }
-
   footer img {
     width: 166px;
   }
@@ -680,7 +677,6 @@ i.fa-handshake-angle {
   .nav__logo {
     width: 200px;
   }
-
   .proj-restaurants {
     width: 100%;
     display: flex;
@@ -714,7 +710,6 @@ i.fa-handshake-angle {
   .proj-restaurants h2 {
     padding-left: 15px;
   }
-
   .proj-menu__list {
     display: flex;
     flex-direction: column;

@@ -30,8 +30,7 @@ body, html {
       top:0;
       left: 0;
       right: 0;
-      bottom: 0;
-      /*ici tout ce qui concerne votre background linear gradient*/
+      bottom: 0;      
       background-color: white;
       animation: hideLoader 3000ms 1 forwards;
       animation-delay: 1500ms;
@@ -78,16 +77,13 @@ body, html {
 
 .nav {
 
-  // display: flex;
-  // justify-content: center;
+  
   padding-top: 20px;
-  margin: 10px;
-  // width: 100%;
+  margin: 10px;  
 
   &__heading
   {
-    display: flex;
-    // align-items: center;
+    display: flex;    
     width: 100%;
     justify-content: center;
   }
@@ -102,13 +98,13 @@ body, html {
     display: flex;    
     justify-content: center;
     align-items: center;
+    
   }
 
   .text 
   {
     width: 100%;
-    // font-size: 15px;
-    display: flex;
+        display: flex;
     justify-content: center;
   }
 
@@ -430,7 +426,7 @@ h1
 {
     display: block;
     width: 100%;
-    // height: 545px;
+    height: 610px;
     object-fit: cover;
     margin-bottom: -14%;
     box-sizing:border-box;         
@@ -969,7 +965,3 @@ i.fa-handshake-angle {
 
   }
 }
-  
-
-
-
